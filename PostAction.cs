@@ -52,15 +52,9 @@ namespace OData.PostAction
             {
                 return item;
             }
-            else if (item.GetType().Name == "SelectAllAndExpand`1") //$expand
+            else if (item is ISelectExpandWrapper wrapper) // $select/$expand
             {
-                var entityProperty = item.GetType().GetProperty("Instance");
-                return entityProperty.GetValue(item);
-            }
-            else if (item.GetType().Name == "SelectSome`1") //$select
-            {
-                var dict = ((ISelectExpandWrapper)item).ToDictionary();
-                return ToObject(type, dict);
+                return ToObject(type, wrapper.ToDictionary());
             }
             else 
             {
