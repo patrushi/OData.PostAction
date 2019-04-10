@@ -8,7 +8,7 @@ Add post action to odata controller action.
 ...
 public IActionResult GetMyEntity(ODataQueryOptions<MyEntity> options)
 {
-    var query = DbContext.MyEntity;;
+    var query = DbContext.MyEntity;
 
     Action<ICollection<MyEntity>> postAction = collection => {
         var keys = collection.Select(e => e.RemoteEntityId).Distinct().ToArray();
