@@ -2,6 +2,8 @@ OData.PostAction
 
 Add post action to odata controller action.
 
+Do not working with expand collection.
+
 # Using 
 
 ```
