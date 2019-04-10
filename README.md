@@ -5,9 +5,8 @@ Add post action to odata controller action.
 # Using 
 
 ```
-/// <summary>User</summary>
 ...
-public IActionResult GetMyEntity(ODataQueryOptions<PartialPlan> options)
+public IActionResult GetMyEntity(ODataQueryOptions<MyEntity> options)
 {
     var query = DbContext.MyEntity;;
 
@@ -23,7 +22,7 @@ public IActionResult GetMyEntity(ODataQueryOptions<PartialPlan> options)
 ```
 
 # Links
-* Nuget - https://www.nuget.org/packages/EFCore.DbComment/
+* Nuget - https://www.nuget.org/packages/OData.PostAction/
 
 # Thanks
 * https://github.com/gorillapower for https://github.com/OData/WebApi/issues/521#issuecomment-281309496

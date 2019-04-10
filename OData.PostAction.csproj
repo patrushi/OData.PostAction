@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>OData.PostAction</RootNamespace>
+    <PackageId>OData.PostAction</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>ptrushin</Authors>
+    <Company>patrushi</Company>
+    <PackageDescription>
+    https://github.com/patrushi/OData.PostAction
+    Add post action to odata controller action
+    </PackageDescription>
+    <PackageProjectUrl>https://github.com/patrushi/OData.PostAction</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
